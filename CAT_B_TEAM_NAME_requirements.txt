@@ -1,0 +1,46 @@
+﻿Python Packages & Version: 
+* numpy==1.24.0
+* pandas==2.2.3
+* matplotlib==3.7.5
+* seaborn==0.11.2
+* scikit-learn==1.4.2
+* statsmodels==0.14.3
+* xgboost==3.0.2
+________________
+
+
+
+
+Dashboard Requirements: 
+NUS Datathon "TEAM NAME" React + AI Dashboard
+Node.js version: 18.x or higher
+npm version: 9.x or higher
+Groq API
+- Required for AI-powered insights and analysis
+- Model: llama-3.1-8b-instant
+- Endpoint: https://api.groq.com/openai/v1/chat/completions
+- Free tier available at: https://console.groq.com/keys
+ 
+Setup:
+1. Visit https://console.groq.com/keys
+2. Sign up with Google (free)
+3. Create an API key
+4. Add the API key in the application UI
+NOTE: A demo video is included showcasing the functionality.
+If judges need an API key for testing, the team will provide one upon request.
+Contact: johnl@u.nus.edu or @p1nkle (telegram)
+Running the application (local in terminal)
+npm run dev
+or 
+yarn dev
+Embedded data
+- Survey data (1,976 responses) is embedded directly in the application
+- Data is compressed using pako (gzip compression)
+- No external data files required to run the application
+- Data size: ~500KB compressed
+Additional notes
+- Application is a single-page React application
+- All data processing happens client-side
+- No backend server required
+- Groq API is only called when users request AI insights
+- API key is stored in localStorage (not sent to server for safety)
